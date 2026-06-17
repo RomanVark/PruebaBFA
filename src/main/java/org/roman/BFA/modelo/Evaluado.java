@@ -14,30 +14,31 @@ public class Evaluado {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @Required
-    @Column(length = 50)
-    private String primerApellido;
-
+    @Column(length = 100)
+    private String PrimerNombre;
     @Required
-    @Column(length = 50)
-    private String segundoApellido;
-
+    @Column(length = 100)
+    private String SegundoNombre;
     @Required
-    @Column(length = 50)
-    private String nombre;
+    @Column(length = 100)
+    private String PrimerApellido;
+    @Required
+    @Column(length = 100)
+    private String SegundoApellido;
 
-    private LocalDate fechaNacimiento;
-
+    private LocalDate FechaNacimiento;
     private int edad;
 
-    @Column(length = 50)
-    private String sexo;
+    @Column(length = 20)
+    private String Sexo;
 
     @Column(length = 100)
-    private String estudiosRealizados;
+    private String EstudiosRealizados;
 
     @Column(length = 100)
-    private String profesion;
+    private String Profesion;
+
 }
